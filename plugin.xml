@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" id="cordova.ios.uuid" version="1.0.0">
+  <engines>
+    <engine name="cordova" version=">=3.0.0" />
+  </engines>
+  <name>iOSUUID</name>
+  <description>Plugin for iOS to retrieve the UUID.</description>
+  <author>Nick Barth</author>
+  <keywords>iOS UUID</keywords>
+  <license>MIT</license>
+
+  <!-- JavaScript interface -->
+  <js-module src="www/iOSUUID.js" name="iOSUUID" target="www/iOSUUID.js">
+    <clobbers target="window.iOSUUID" />
+  </js-module>
+
+  <!-- ios -->
+  <platform name="ios">
+    <config-file target="config.xml" parent="plugins">
+      <feature name="iOSUUID">
+        <param name="ios-package" value="iOSUUID"/>
+        <param name="onload" value="true" />
+      </feature>
+      <plugin name="iOSUUID" value="iOSUUID"/>
+    </config-file>
+    <header-file src="src/ios/iOSUUID.h" />
+    <source-file src="src/ios/iOSUUID.m" />
+  </platform>
+</plugin>
