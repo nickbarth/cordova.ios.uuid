@@ -2,7 +2,7 @@
 
 ## About this Plugin
 
-Get the [UIDevice identifierForVendor] for an iOS device. Supports iOS Versions 6.0 and up only.
+Get the `[UIDevice identifierForVendor]` for an iOS device. Supports iOS Versions 6.0 and up only.
 
 ## Using the Plugin
 
