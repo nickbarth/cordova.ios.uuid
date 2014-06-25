@@ -4,7 +4,7 @@
 
 @synthesize callbackId;
 
-- (void)iOSParseLogin:(CDVInvokedUrlCommand *)command {
+- (void)iOSUUID:(CDVInvokedUrlCommand *)command {
     self.callbackId = command.callbackId;
 
     NSString *uuid = [UIDevice currentDevice].identifierForVendor.UUIDString;
