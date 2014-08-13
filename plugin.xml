@@ -7,7 +7,7 @@
   <description>Plugin for iOS to retrieve the UUID.</description>
   <author>Nick Barth</author>
   <keywords>iOS UUID</keywords>
-  <license>MIT</license>
+  <license>CC0</license>
 
   <!-- JavaScript interface -->
   <js-module src="www/iOSUUID.js" name="iOSUUID" target="www/iOSUUID.js">
